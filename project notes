@@ -1,0 +1,16 @@
+
+Link: https://www.youtube.com/watch?v=khJlrj3Y6Ls
+
+1. Making separate css files for each component by making separate filename.module.css files in separate folder of each component.
+a. Making css module file for each component is used to make separate css for each component.
+
+2. The components in folder component were imported as object in one line from component folder, to do that index.js file was made with following syntax:
+	export {default as Cards} from './Cards/Cards'; 
+
+3. Code goes to index.js file in each folder so it is not needed to be mentioned while refernecing to it. Its folder name is enough.
+
+4. material-ui can be installed by " npm install --save @material-ui/core"
+
+
+
+CONTINUE FROM video 32:15 min

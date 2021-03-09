@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import {Cards, Chart, CountryPicker } from './components';
+import styles  from "./App.module.css";
+
+import fetchData from './api'; //{} is used as const fetchData was not exported as default 
+                                // './api/index.js is similar to './api' for compiler.
+
+ const App = () => {
+    const [data, setData] = useState({});
+
+     useEffect(() => {
+         const fetch = async () => {
+            const res = await fetchData(); 
+            setData(res); 
+         console.log(data)
+         }
+         fetch()      
+     }, [])
+
+    return (
+        <div className={styles.container}>
+            
+            <Cards data={data}/>
+            <CountryPicker/>
+            <Chart/>
+            
+        </div>
+    )
 }
 
 export default App;
