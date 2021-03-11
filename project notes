@@ -11,6 +11,6 @@ a. Making css module file for each component is used to make separate css for ea
 
 4. material-ui can be installed by " npm install --save @material-ui/core"
 
+5. While wrtiing css in css folder for react components, we need to pass !important with the css property to make it take effect.
 
-
-CONTINUE FROM video 32:15 min
+CONTINUE FROM video 1:00:07 min

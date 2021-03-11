@@ -1,0 +1,25 @@
+.container {
+    margin : 50px 0px;
+}
+
+.card {
+    margin : 0 2%  !important ; /*important is required while using material ui to implement this css */
+}
+
+.infected {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.8);
+}
+
+@media(max-width: 700px) {
+    .card {
+        margin: 2% 0 !important;
+    }
+}
