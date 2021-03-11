@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {Cards, Chart, CountryPicker } from './components';
 import styles  from "./App.module.css";
 
-import fetchData from './api'; //{} is used as const fetchData was not exported as default 
+import fetchData from './api/api'; //{} is used as const fetchData was not exported as default 
                                 // './api/index.js is similar to './api' for compiler.
 import covidImage from './images/covid-19.png';
 
