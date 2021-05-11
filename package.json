@@ -43,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/umar51/covid19-tracker-app.git",
+  "author": "umar51 <66181738+umar51@users.noreply.github.com>",
+  "license": "MIT"
+  
 }
