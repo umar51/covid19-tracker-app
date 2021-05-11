@@ -2,6 +2,7 @@
   "name": "covid19-tracker-app",
   "version": "0.1.0",
   "private": true,
+   "main": "index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
@@ -43,7 +44,6 @@
       "last 1 safari version"
     ]
   },
-  "main": "index.js",
   "repository": "https://github.com/umar51/covid19-tracker-app.git",
   "author": "umar51 <66181738+umar51@users.noreply.github.com>",
   "license": "MIT"
